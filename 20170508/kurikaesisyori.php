@@ -1,4 +1,26 @@
 <?php
+//サンプルスクリプト1
+$a = 0;
+while ( $a <= 3 ){
+    print ( $a );
+    $a++;
+    echo "<br>";
+}
+ ?>
+
+<?php
+echo "サンプルスクリプト2<br>";
+$s = 0;
+$i = 0;
+do{
+    ++ $i;
+    $s += $i;
+}while ( $i < 10 );
+print "1から{$i}までの和は{$s}<br>";
+ ?>
+
+
+<?php
  //サンプルスクリプト4
 $color=["red","green","blue"];
 foreach($color as $value){
