@@ -1,6 +1,6 @@
 <?php
 $fp = fopen ( "count.txt" , "r+" );//ファイルを開く
-$count = fgets ( $fp , 10 );//9桁分値読み取り
+$count = trim(fgets ( $fp , 10 ));//9桁分値読み取り
 $count ++;//値＋1（カウントアップ）
 rewind ( $fp );//ファイルポインタを先頭に戻す
 fputs ( $fp , $count );//値書き込み

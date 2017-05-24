@@ -21,7 +21,7 @@ print "1から{$i}までの和は{$s}<br>";
 
 
 <?php
- //サンプルスクリプト4
+ echo "サンプルスクリプト4";
 $color=["red","green","blue"];
 foreach($color as $value){
     print("{$value}<br/>");
@@ -37,7 +37,7 @@ foreach($color as $iro=>$value){
 ?>
 
 <?php
-//サンプルスクリプト6
+echo "サンプルスクリプト6";
 for($i=0; $i<10; $i++){
     if($i == 5){
         echo "5に着いた<br>";
@@ -57,14 +57,14 @@ for($i=0; $i<10; $i++){
 
 
 <?php
-//課題1
+echo "課題1";
     for ($i=1; $i<=5; $i++){
         echo("number:{$i}<br>");
     }
 ?>
 
 <?php
- //課題2
+ echo "課題2";
 $color=["赤","緑","青","黄色"];
 for($i=0; $i<count($color); $i++){
     echo("$color[$i]<br>");
