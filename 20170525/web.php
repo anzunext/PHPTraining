@@ -1,10 +1,3 @@
-<?php
-if(isset($_POST['comment']) == true){
-    $comment = $_POST['comment'];
-    echo $comment;
-}
-?>
-
 <!DOCTYPE html>
 <html lang = "ja">
 <head>
@@ -31,12 +24,9 @@ if(isset($_POST['comment']) == true){
 
     <div class="oya3">
         <div class="oya3_1">性別</div>
-        <div><input name = "sex" type = "radio" id="s1" value = "男"/></div>
-        <div>男</div>
-        <div><input name = "sex" type = "radio" id="s2" value = "女"/></div>
-        <div>女</div>
-        <div ><input name = "sex" type = "radio" label="s3" value = "不明"/></div>
-        <div >不明</br></div>
+        <label><input name = "sex" type = "radio" id="s1" value = "男"/>男</label>
+        <label><input name = "sex" type = "radio" id="s2" value = "女"/>女</label>
+        <label><input name = "sex" type = "radio" label="s3" value = "不明"/>不明</label></br>
     </div>
 
     <div class="oya4">
@@ -67,7 +57,7 @@ if(isset($_POST['comment']) == true){
         <div class="oya7_2"><input name = "where[]" type = "checkbox"
              id="s3" value="雑誌"></div>
         <div>雑誌</div>
-        <div><input name = "where[]" type = "checkbox"
+        <div class="oya7_3"><input name = "where[]" type = "checkbox"
              id="s4" value="新聞"></div>
         <div>新聞</div>
     </div>
@@ -80,8 +70,8 @@ if(isset($_POST['comment']) == true){
     </div>
 
     <div>
-        <div>お問い合わせ内容</div>
-        <div><input name = "お問い合わせ内容" type = "text"><br></div>
+        <div>質問内容</div>
+        <div><input name = "question" type = "text"><br></div>
     </div>
 
     <div class="button">

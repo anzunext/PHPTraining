@@ -1,10 +1,3 @@
-<?php
-if(isset($_POST['comment']) == true){
-    $comment = $_POST['comment'];
-    echo $comment;
-}
-?>
-
 <!DOCTYPE html>
 <html lang = "ja">
 <head>
@@ -20,7 +13,7 @@ if(isset($_POST['comment']) == true){
 <?php
 $fp = fopen ( "count.txt" , "r+" );//ファイルを開く
 $count = trim(fgets ( $fp , 10 ));//9桁分値読み取り
-$count ++;//値＋1（カウントアップ）
+//$count ++;//値＋1（カウントアップ）
 rewind ( $fp );//ファイルポインタを先頭に戻す
 fputs ( $fp , $count );//値書き込み
 fclose ( $fp );//ファイル閉じる

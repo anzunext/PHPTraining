@@ -1,10 +1,3 @@
-<?php
-if(isset($_POST['comment']) == true){
-    $comment = $_POST['comment'];
-    echo $comment;
-}
-?>
-
 <!DOCTYPE html>
 <html lang = "ja">
 <head>
@@ -17,6 +10,15 @@ if(isset($_POST['comment']) == true){
 <h1>確認画面</h1>
 
 <?php
+
+$fp = fopen ( "count.txt" , "r+" );//ファイルを開く
+$count = trim(fgets ( $fp , 10 ));//9桁分値読み取り
+$count ++;//値＋1（カウントアップ）
+rewind ( $fp );//ファイルポインタを先頭に戻す
+fputs ( $fp , $count );//値書き込み
+fclose ( $fp );//ファイル閉じる
+//echo "お問い合わせ番号".$count."<br>";
+
  $faname = $_POST["familyname"];
  $finame = $_POST["firstname"];
  $sex = $_POST["sex"];
@@ -26,20 +28,32 @@ if(isset($_POST['comment']) == true){
  $tel3 = $_POST["tel3"];
  $mail1 = $_POST["mail1"];
  $mail2 = $_POST["mail2"];
- $where = $_POST["where"];
+
  $category = $_POST["category"];
- $question = $_POST["お問い合わせ内容"];
+ $question = $_POST["question"];
+
 
  echo "名前は".$faname." ".$finame."です<br>";
  echo "性別は".$sex."です<br>";
  echo "住所は".$address."です<br>";
  echo "電話番号は".$tel1."-".$tel2."-".$tel3."です<br>";
  echo "メールアドレスは".$mail1."@".$mail2."です<br>";
- echo $where[0]." ".$where[1]."で知りました<br>";
+ if(isset($_POST["where"])){
+    foreach($_POST["where"] as $e){
+        $where[] = $_POST["where"];
+        echo $e . " ";
+    }
+    echo "<br>";
+ }
+ else{
+    $_POST['where'][0] = "入力されていません。";
+    echo $_POST['where'][0] . "<br>";
+ }
  echo "質問のカテゴリについては".$category."です<br>";
  echo "お問い合わせ内容<br>".$question."<br>"."です<br>";
 
  echo "<form action=\"web4.php\" method=\"post\">";
+ echo "<input type=\"hidden\" name=\"count\" value=".$count.">";
  echo "<input type=\"hidden\" name=\"faname\" value=".$faname.">";
  echo "<input type=\"hidden\" name=\"finame\" value=".$finame.">";
  echo "<input type=\"hidden\" name=\"sex\" value=".$sex.">";
@@ -49,9 +63,15 @@ if(isset($_POST['comment']) == true){
  echo "<input type=\"hidden\" name=\"tel3\" value=".$tel3.">";
  echo "<input type=\"hidden\" name=\"mail1\" value=".$mail1.">";
  echo "<input type=\"hidden\" name=\"mail2\" value=".$mail2.">";
- echo "<input type=\"hidden\" name=\"where\" value=".$where[0].$where[1].">";
+if(isset($where[1])){
+    echo "<input type=\"hidden\" name=\"category\" value=". $where[0] . " " . $where[1].">";
+}
+else{
+    echo "<input type=\"hidden\" name=\"category\" value=". $_POST['where'][0].">";
+}
  echo "<input type=\"hidden\" name=\"category\" value=".$category.">";
  echo "<input type=\"hidden\" name=\"question\" value=".$question.">";
+
  ?>
 
  <input type="button" value="戻る" onclick="history.back()"><br>
