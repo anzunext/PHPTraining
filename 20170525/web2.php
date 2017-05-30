@@ -64,9 +64,9 @@ echo "<input type=\"hidden\" name=\"tel3\" value=".$tel3.">";
 echo "<input type=\"hidden\" name=\"mail1\" value=".$mail1.">";
 echo "<input type=\"hidden\" name=\"mail2\" value=".$mail2.">";
 
-var_dump(isset($where[1]));
-var_dump($_POST['where'][0]);
-var_dump($_POST['where'][1]);
+// var_dump(isset($where[1]));
+// var_dump($_POST['where'][0]);
+// var_dump($_POST['where'][1]);
 
 if (isset($where[0],$where[1])) {
     echo "<input type=\"hidden\" name=\"where\" value=" . $_POST['where'][0],$_POST['where'][1] . ">";
