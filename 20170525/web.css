@@ -1,67 +1,13 @@
 body{
-    width: 700px;
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
+    background-color: #CEF9DC
+}
+h1{
+}
+div{
 }
 
-.oya1 {
-display: flex;
-}
-.oya1_1{
-    width: 200px;
-}
-.oya1_{
-    flex: 1 1 auto;
-}
-
-.oya2 {
-display: flex;
-}
-.oya2_1{
-    width: 200px;
-}
-.oya2_2{
-    flex: 1 1 auto;
-}
-
-.oya3{
+.oya1{
     display: flex;
-}
-.oya3_1{
-    width: 200px;
-}
-
-.oya4{
-    display: flex;
-}
-.oya4_1{
-    width: 200px;
-}
-
-.oya5{
-    display: flex;
-}
-.oya5_1{
-    width: 200px;
-}
-
-.oya6{
-    display: flex;
-}
-.oya6_1{
-    width: 200px;
-}
-
-.oya7{
-    display: flex;
-}
-.oya7_1{
-    width: 200px;
-}
-
-.oya8{
-    display: flex;
-}
-.oya8_1{
-    width: 200px;
+    text-align: center;
 }

@@ -19,11 +19,12 @@
     <th>質問カテゴリ</th>
     <th>質問内容</th>
     </tr>
+
     <?php
     $fp=fopen("web.csv", "r");
     while($date=fgetcsv($fp, 10000)){
 
-
+//var_dump($date);
         foreach ($date as $d) {
             print"<td>$d</td>";
         }

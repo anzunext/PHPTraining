@@ -17,7 +17,4 @@ $data[] = $_POST['question'];
     $fp = fopen("web.csv", "a");
     fputcsv($fp,$data);
     fclose($fp);
-
-
-
 ?>
