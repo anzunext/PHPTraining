@@ -35,34 +35,32 @@ div {
 .oya1 {
 display: flex;
 justify-content: center;
-
+/*border :1px solid red;*/
 margin: 0 0 0 0;
 padding: 0;
-text-indent: -2em;
-padding-left: 2em;
-
-
+/*text-indent: -2em;*/
+/*padding-left: 2em;*/
 }
 .oya1_1{
     width: 150px;
+    /*border :1px solid blue;*/
 }
 .oya1_2{
     width: 150px;
+    /*border :1px solid silver;*/
 }
 
 .oya2 {
 display: flex;
 justify-content: center;
-
 margin: 0 0 0 0;
 padding: 0;
-text-indent: -2em;
-padding-left: 2em;
-
-
+/*text-indent: -2em;*/
+/*padding-left: 2em;*/
 }
 .oya2_1{
     width: 150px;
+    /*border :1px solid red;*/
 }
 .oya2_2{
     width: 150px;
@@ -71,25 +69,36 @@ padding-left: 2em;
 .oya3{
     display: flex;
     justify-content: center;
-
-
+    margin: 0 0 0 0;
+    padding: 0;
+    text-align: 
 }
 .oya3_1{
     width: 150px;
+    /*border :1px solid red;*/
+}
+.oya3_2{
+    width: 40px;
+    /*border :1px solid blue;*/
+}
+.oya3_3{
+    width: 55px;
+    /*border :1px solid red;*/
+}
+.oya3_4{
+    width: 55px;
 }
 
 .oya4{
     display: flex;
     justify-content: center;
-
     margin: 0 0 0 0;
     padding: 0;
-    text-indent: -2em;
-    padding-left: 2em;
-
-
+    /*text-indent: -2em;*/
+    /*padding-left: 2em;*/
 }
 .oya4_1{
+    border :1px solid red;
     width: 150px;
 }
 .oya4_2{
@@ -99,47 +108,44 @@ padding-left: 2em;
 .oya5{
     display: flex;
     justify-content: center;
-
     margin: 0 0 0 0;
     padding: 0;
-    text-indent: -2em;
-    padding-left: 2em;
-
-
+    /*border :1px solid red;*/
+    /*text-indent: -2em;*/
+    /*padding-left: 2em;*/
 }
 .oya5_1{
-    width: 100px;
+    border :1px solid blue;
+    width: 150px;
 }
 .oya5_2{
-    width: 100px;
+    /*border :1px solid white;*/
+    width: 50px;
 }
 .oya5_3{
-    width: 100px;
+    width: 50px;
 }
 .oya5_4{
-    width: 100px;
+    width: 50px;
 }
 
 .oya6{
     display: flex;
     justify-content: center;
-
     margin: 0 0 0 0;
     padding: 0;
-    text-indent: -2em;
-    padding-left: 2em;
-
-
+    /*text-indent: -2em;*/
+    /*padding-left: 2em;*/
 }
 .oya6_1{
-    width: 100px;
+    width: 150px;
 }
 
 .oya7{
     display: flex;
     justify-content: center;
-
-
+    margin: 0 0 0 0;
+    padding: 0;
 }
 .oya7_1{
     width: 150px;
@@ -148,26 +154,22 @@ padding-left: 2em;
 .oya8{
     display: flex;
     justify-content: center;
-
     margin: 0 0 0 0;
     padding: 0;
-    text-indent: -2em;
-    padding-left: 2em;
-
-
-
+    /*text-indent: -2em;*/
+    /*padding-left: 2em;*/
 }
 .oya8_1{
     width: 150px;
 }
 
 .oya9_1{
+    display: flex;
+    justify-content: center;
     width: 100px;
-
-
     margin: 0 0 0 0;
     padding: 0;
-    text-indent: -2em;
-    padding-left: 2em;
+    /*text-indent: -2em;*/
+    /*padding-left: 2em;*/
 
 }

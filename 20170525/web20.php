@@ -4,27 +4,27 @@
 <meta charset = "UTF-8">
 <title>フォームからデータを受け取る</title>
 <link rel="stylesheet" type="text/css"
- href="./style.css">
+ href="./style2.css">
 </head>
 <body>
 <h1>お問い合わせ画面</h1>
 <div class="main">
 <form action = "web2.php" method = "post">
     <div class="oya1">
-        <div class="oya1_1">姓(必須)</div>
-        <div class="oya1_2"><input id="faname" type="text" name="familyname" placeholder="山田" required/><br/></div>
+        <div class="oya1_1">姓</div>
+        <div class="oya1_2"><input id="faname" type="text" name="familyname" placeholder="山田" required></div>
     </div>
 
     <div class="oya2">
-        <div class="oya2_1">名(必須)</div>
+        <div class="oya2_1">名</div>
         <div class="oya2_2"><input type="text" name="firstname" placeholder="太郎" required/><br/></div>
     </div>
 
     <div class="oya3">
         <div class="oya3_1">性別</div>
-        <label><input name="sex" type="radio" id="s1" value="男"/>男</label>
-        <label><input name="sex" type="radio" id="s2" value="女"/>女</label>
-        <label><input name="sex" type="radio" label="s3" value="不明"/>不明</label></br>
+        <label class="oya3_2"><input name="sex" type="radio" id="s1" value="男"/>男</label>
+        <label class="oya3_3"><input name="sex" type="radio" id="s2" value="女"/>女</label>
+        <label class="oya3_4"><input name="sex" type="radio" id="s3" value="不明"/>不明</label>
     </div>
 
     <div class="oya4">
@@ -33,19 +33,19 @@
     </div>
 
     <div class="oya5">
-        <div class="oya5_1">電話番号(必須)</div>
-        <div class="oya5_2"><input type="tel" name="tel1" maxlength="4" size="3" placeholder=123 required></div>
+        <div class="oya5_1">電話番号</div>
+        <div class="oya5_2"><input type="tel" name="tel1" maxlength="4" size="2" placeholder=123 required></div>
         -
-        <div class="oya5_3"><input type="tel" name="tel2" maxlength="4" size="3" placeholder=4567 required></div>
+        <div class="oya5_3"><input type="tel" name="tel2" maxlength="4" size="2" placeholder=4567 required></div>
         -
-        <div class="oya5_4"><input type="tel" name="tel3" maxlength="4" size="3" placeholder=8910 required></div>
+        <div class="oya5_4"><input type="tel" name="tel3" maxlength="4" size="2" placeholder=8910 required></div>
     </div>
 
     <div class="oya6">
-        <div class="oya6_1">メールアドレス(必須)</div>
-        <div class="oya6_2"><input type="text" name="mail1" placeholder="abc123" required></div>
+        <div class="oya6_1">メールアドレス</div>
+        <div class="oya6_2"><input type="text" name="mail1" size="3" placeholder="abc123" required></div>
         @
-        <div><input type="text" name="mail2" placeholder=".co.jp/.jp/等" required></div>
+        <div><input type="text" name="mail2" size="3" placeholder=".co.jp/.jp/等" required></div>
     </div>
 
     <div class="oya7">
